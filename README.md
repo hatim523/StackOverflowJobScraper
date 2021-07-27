@@ -40,3 +40,7 @@ Specific Skill: ``` scrapy crawl job_spider -a skill="Web Developer" ```
 Specific Location: ```scrapy crawl job_spider -a location="Karachi" ```
 
 Query Location and Skill ``` scrapy crawl job_spider -a location="Karachi" -a skill="Blockchain Developer"```
+
+
+
+*Note: Chromedriver required to run automation. https://chromedriver.chromium.org/downloads*
