@@ -27,3 +27,20 @@ We expect:
   4. requirements.txt (see python virtual envs)
   5. All assumptions mentioned in the readme file.
   6. Hours.txt with the detailed distribution of work, including learning time.
+
+
+### Run Commands:
+
+To scrape on default (given) url: ``` scrapy crawl job_spider ```
+
+**To scrape jobs for specific location or skill or both**:
+
+Specific Skill: ``` scrapy crawl job_spider -a skill="Web Developer" ```
+
+Specific Location: ```scrapy crawl job_spider -a location="Karachi" ```
+
+Query Location and Skill ``` scrapy crawl job_spider -a location="Karachi" -a skill="Blockchain Developer"```
+
+
+
+*Note: Chromedriver required to run automation. https://chromedriver.chromium.org/downloads*
