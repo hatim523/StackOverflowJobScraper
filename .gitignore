@@ -2,3 +2,5 @@
 
 */__pychache__/
 chromedriver.exe
+
+*.pyc
