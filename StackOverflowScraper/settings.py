@@ -86,3 +86,7 @@ AUTOTHROTTLE_DEBUG = False
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+
+DEFAULT_JOB_POST_URL = "https://stackoverflow.com/jobs?q=blockchain"
+DEFAULT_JOBS_PARENT_PAGE = "https://stackoverflow.com/jobs"

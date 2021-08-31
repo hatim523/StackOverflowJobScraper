@@ -4,13 +4,15 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import os
 
+from StackOverflowScraper.settings import DEFAULT_JOBS_PARENT_PAGE
+
 
 class URLGenerator:
     def __init__(self, stop_on_error=False):
         self.stop_on_error = stop_on_error
 
         self.driver = None
-        self.jobs_parent_page = "https://stackoverflow.com/jobs"
+        self.jobs_parent_page = DEFAULT_JOBS_PARENT_PAGE
 
         self.chromedriver_location = os.path.join(os.getcwd(),
                                                   "chromedriver.exe")

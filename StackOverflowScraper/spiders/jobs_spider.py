@@ -3,6 +3,7 @@ import w3lib.html
 
 from StackOverflowScraper.automation.url_generator import URLGenerator
 from StackOverflowScraper.items import JobPostItem
+from StackOverflowScraper.settings import DEFAULT_JOB_POST_URL
 from StackOverflowScraper.spiders.helpers import get_next_button_link
 
 
@@ -10,8 +11,7 @@ class JobSpider(scrapy.Spider):
     name = 'job_spider'
 
     def __init__(self, skill=None, location=None, **kwargs):
-        self.default_job_post_url = "https://stackoverflow.com/jobs?" \
-                                    "q=blockchain"
+        self.default_job_post_url = DEFAULT_JOB_POST_URL
         self.generated_url = None
 
         url_generator = URLGenerator(stop_on_error=True)
