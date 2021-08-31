@@ -6,6 +6,7 @@
 #     https://docs.scrapy.org/en/latest/topics/settings.html
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
+import os
 
 BOT_NAME = 'StackOverflowScraper'
 
@@ -90,3 +91,7 @@ AUTOTHROTTLE_DEBUG = False
 
 DEFAULT_JOB_POST_URL = "https://stackoverflow.com/jobs?q=blockchain"
 DEFAULT_JOBS_PARENT_PAGE = "https://stackoverflow.com/jobs"
+
+BASE_DIR = os.getcwd()
+
+CHROMEDRIVER_LOCATION = os.path.join("chromedriver.exe")
